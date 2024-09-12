@@ -4,7 +4,7 @@ class Landing extends Component {
     state = {  } 
     render() { 
         return (
-            <h1>This is the landing screen</h1>
+            <h1>This is the landing</h1>
         );
     }
 }
