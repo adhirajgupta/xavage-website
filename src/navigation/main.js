@@ -7,7 +7,7 @@ import {
     Outlet,
     useNavigate,
 } from 'react-router-dom';
-import Landing from '../screens/Information/LandingScreen';
+import Landing from '../screens/LandingScreen/LandingScreen';
 import Sponsor from '../screens/Information/SponsorScreen';
 import InformationNavbar from '../screens/Information/InformationNavbar';
 //import CauseScreen from '../screens/Cause/CauseScreen';
