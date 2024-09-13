@@ -17,9 +17,15 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-#edition-heading{
+#xavage-heading{
     color: #fff;
     font-size: 4rem;
+    font-weight: 2rem;
+    margin: 1rem;
+}
+#edition-heading{
+    color: #fff;
+    font-size: 3rem;
     font-weight: 2rem;
     margin: 1.5rem 1rem;
 }
@@ -27,8 +33,25 @@
     margin: 1rem;
     padding: 1rem;
     width: 50%;
-    height: 60px;
+    height: 5rem;
     border: none;
     border-radius: 50px;
     background-color: #e22626;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media (min-width: 700px){
+    #xavage-heading{
+        font-size: 6rem;
+    }
+    #edition-heading{
+        font-size: 4.5rem;
+    }
+    #registration-button{
+        font-size: 2rem;
+        width: 35%;
+    }
 }

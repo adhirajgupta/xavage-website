@@ -1,0 +1,69 @@
+#email-address-h3{
+    color: #fff;
+
+}
+.footer {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#footer-logo-div{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.social-icon {
+    width: 30px;
+    height: 30px;
+    /* filter: invert(1); Makes the icons white on dark background */
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Enlarge slightly on hover */
+}
+
+#footer-info-div{
+    margin-top: 10px;
+}
+#footer-info-div a {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+#footer-info-div a:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #footer-info-div {
+        text-align: right;
+    }
+
+    #footer-info-div p {
+        font-size: 16px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+}

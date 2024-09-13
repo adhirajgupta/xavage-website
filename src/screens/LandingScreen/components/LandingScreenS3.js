@@ -1,16 +1,56 @@
-import React, { Component } from 'react';
+import React, { useState } from "react";
+import Logo1 from "./../sponsor-images/Placeholder-Logo1.png";
 
-class Landing3 extends Component {
-    state = {}
-    render() {
-        return (
-            <>
-            <h3>***Section 3***</h3>
-            <h1>This is the section for the main sponsors</h1>
-            <h3>***Section 3***</h3>
-            </>
-        );
-    }
-}
+const sponsors = [
+  {
+    name: "Sponsor 1",
+    description: "Description for Sponsor 1 goes here.",
+    image: Logo1,
+  },
+  {
+    name: "Sponsor 2",
+    description: "Description for Sponsor 2 goes here.",
+  },
+  {
+    name: "Sponsor 3",
+    description: "Description for Sponsor 3 goes here.",
+  },
+  // Add more sponsors as needed
+];
 
-export default Landing3;
+const LandingS3 = () => {
+  const [currentSponsor, setCurrentSponsor] = useState(0);
+
+  const handlePrev = () => {
+    setCurrentSponsor(
+      currentSponsor === 0 ? sponsors.length - 1 : currentSponsor - 1
+    );
+  };
+
+  const handleNext = () => {
+    setCurrentSponsor(
+      currentSponsor === sponsors.length - 1 ? 0 : currentSponsor + 1
+    );
+  };
+
+  return (
+    <div className="sponsor-carousel">
+      <h1 className="sponsor-heading" id="section3-heading">Our Sponsors</h1>
+      <div className="sponsor-card" id="section3-sponsor-card">
+        <button className="nav-button" onClick={handlePrev}>
+        &#10094;
+        </button>
+        <div className="sponsor-content">
+        <img className="sponsor-logo" src={sponsors[currentSponsor].image} alt="Sponsor Logo"/>
+          <h2>{sponsors[currentSponsor].name}</h2>
+          <p>{sponsors[currentSponsor].description}</p>
+        </div>
+        <button className="nav-button" onClick={handleNext}>
+        &#10095;
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default LandingS3;
