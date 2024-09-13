@@ -3,32 +3,25 @@ import React from "react";
 const LandingS2 = () => {
   const eventData = [
     {
-      title: "Syndicalism",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis purus sit amet magna gravida, vel tincidunt tortor suscipit. Duis ut gravida neque, ac posuere enim. Proin consectetur risus vel orci commodo, non tincidunt urna gravida. Morbi sed ex vel arcu suscipit eleifend. Integer tempor lorem id lorem elementum, id feugiat ipsum sodales. Donec ut neque vel felis feugiat maximus ac ut ligula. Vestibulum id nisi eu lorem tincidunt auctor. Nam facilisis ante id ligula rhoncus, non egestas libero vestibulum. Suspendisse potenti. Sed tincidunt erat at ante maximus, vel volutpat lectus facilisis.",
+      title: "Deal or No Deal"
     },
     {
-      title: "Explicatus",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis purus sit amet magna gravida, vel tincidunt tortor suscipit. Duis ut gravida neque, ac posuere enim. Proin consectetur risus vel orci commodo, non tincidunt urna gravida. Morbi sed ex vel arcu suscipit eleifend. Integer tempor lorem id lorem elementum, id feugiat ipsum sodales. Donec ut neque vel felis feugiat maximus ac ut ligula. Vestibulum id nisi eu lorem tincidunt auctor. Nam facilisis ante id ligula rhoncus, non egestas libero vestibulum. Suspendisse potenti. Sed tincidunt erat at ante maximus, vel volutpat lectus facilisis.",
+      title: "The More the Money"
     },
     {
-      title: "The More the Money",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis purus sit amet magna gravida, vel tincidunt tortor suscipit. Duis ut gravida neque, ac posuere enim. Proin consectetur risus vel orci commodo, non tincidunt urna gravida. Morbi sed ex vel arcu suscipit eleifend. Integer tempor lorem id lorem elementum, id feugiat ipsum sodales. Donec ut neque vel felis feugiat maximus ac ut ligula. Vestibulum id nisi eu lorem tincidunt auctor. Nam facilisis ante id ligula rhoncus, non egestas libero vestibulum. Suspendisse potenti. Sed tincidunt erat at ante maximus, vel volutpat lectus facilisis.",
+      title: "Ready? Set? Sell!"
     },
     {
-      title: "The Courting",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis purus sit amet magna gravida, vel tincidunt tortor suscipit. Duis ut gravida neque, ac posuere enim. Proin consectetur risus vel orci commodo, non tincidunt urna gravida. Morbi sed ex vel arcu suscipit eleifend. Integer tempor lorem id lorem elementum, id feugiat ipsum sodales. Donec ut neque vel felis feugiat maximus ac ut ligula. Vestibulum id nisi eu lorem tincidunt auctor. Nam facilisis ante id ligula rhoncus, non egestas libero vestibulum. Suspendisse potenti. Sed tincidunt erat at ante maximus, vel volutpat lectus facilisis.",
+      title: "Trojans Tank"
     },
     {
-      title: "Deal or No Deal",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis purus sit amet magna gravida, vel tincidunt tortor suscipit. Duis ut gravida neque, ac posuere enim. Proin consectetur risus vel orci commodo, non tincidunt urna gravida. Morbi sed ex vel arcu suscipit eleifend. Integer tempor lorem id lorem elementum, id feugiat ipsum sodales. Donec ut neque vel felis feugiat maximus ac ut ligula. Vestibulum id nisi eu lorem tincidunt auctor. Nam facilisis ante id ligula rhoncus, non egestas libero vestibulum. Suspendisse potenti. Sed tincidunt erat at ante maximus, vel volutpat lectus facilisis.",
+      title: "The Courting"
     },
     {
-      title: "Trojan’s Trap",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis purus sit amet magna gravida, vel tincidunt tortor suscipit. Duis ut gravida neque, ac posuere enim. Proin consectetur risus vel orci commodo, non tincidunt urna gravida. Morbi sed ex vel arcu suscipit eleifend. Integer tempor lorem id lorem elementum, id feugiat ipsum sodales. Donec ut neque vel felis feugiat maximus ac ut ligula. Vestibulum id nisi eu lorem tincidunt auctor. Nam facilisis ante id ligula rhoncus, non egestas libero vestibulum. Suspendisse potenti. Sed tincidunt erat at ante maximus, vel volutpat lectus facilisis."
+      title: "Conquer the Crisis"
     },
     {
-        title: "Ready Set Sell",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis purus sit amet magna gravida, vel tincidunt tortor suscipit. Duis ut gravida neque, ac posuere enim. Proin consectetur risus vel orci commodo, non tincidunt urna gravida. Morbi sed ex vel arcu suscipit eleifend. Integer tempor lorem id lorem elementum, id feugiat ipsum sodales. Donec ut neque vel felis feugiat maximus ac ut ligula. Vestibulum id nisi eu lorem tincidunt auctor. Nam facilisis ante id ligula rhoncus, non egestas libero vestibulum. Suspendisse potenti. Sed tincidunt erat at ante maximus, vel volutpat lectus facilisis.",
+        title: "Stakeholders' Showdown"
       },
   ];
   return (

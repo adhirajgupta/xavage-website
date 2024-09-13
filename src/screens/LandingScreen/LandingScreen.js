@@ -8,7 +8,9 @@ import LandingS4 from "./components/LandingScreenS4";
 
 import './LandingScreenStyling/LandingScreenS1Style.css';
 import './LandingScreenStyling/LandingScreenS2Style.css';
-
+import './LandingScreenStyling/LandingScreenS3Style.css';
+import './LandingScreenStyling/LandingScreenS4Style.css';
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
 
 const Landing = () => {
   return (
