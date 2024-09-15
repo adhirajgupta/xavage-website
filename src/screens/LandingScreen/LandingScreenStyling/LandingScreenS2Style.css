@@ -31,6 +31,10 @@
     color: #fff;
     font-size: 1.2rem;
     font-weight: 650;
+    transition: transform 0.3s ease;
+}
+#landing-s2-button:hover{
+    transform: scale(1.02);
 }
 #landing-s2-heading{
     font-size: 3rem;
@@ -54,6 +58,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    transition: transform 0.3s ease;
 }
 #s2-event-card:hover{
     transform: scale(1.02);
