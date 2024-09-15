@@ -1,7 +1,7 @@
 import React from 'react';
 
 import CauseS1 from "./components/CauseScreenS1";
-import CauseS2 from "./components/CauseScreenS2"
+// import CauseS2 from "./components/CauseScreenS2"
 // import LandingS3 from "./components/LandingScreenS3";
 // import LandingS4 from "./components/LandingScreenS4";
 
@@ -16,7 +16,6 @@ const Cause = () => {
   return (
     <div>
         <CauseS1/>
-        <CauseS2/>
     </div>
   );
 };

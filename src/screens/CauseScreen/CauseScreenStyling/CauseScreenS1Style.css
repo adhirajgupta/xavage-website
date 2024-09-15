@@ -45,4 +45,7 @@ body{
     #why p{
         font-size: 12px;
     }
+    #logo{
+        display: none;
+    }
 }
