@@ -10,7 +10,7 @@ import {
 import Landing from '../screens/LandingScreen/LandingScreen';
 import Sponsor from '../screens/Information/SponsorScreen';
 import InformationNavbar from '../screens/Information/InformationNavbar';
-//import CauseScreen from '../screens/Cause/CauseScreen';
+import CauseScreen from '../screens/CauseScreen/CauseScreen';
 
 const isAuthenticated = () => {
     // Add your authentication logic here
@@ -38,7 +38,7 @@ const Main = () => {
             <Routes>
                 <Route path="/" element={<InformationNavbar/>}>
                     <Route path="/" element={<Landing />} />
-                    <Route path="/ourcause" element={<Sponsor />} />
+                    <Route path="/ourcause" element={<CauseScreen />} />
                 </Route>
                 <Route path="*" element={<NotFound />} />
             </Routes>
