@@ -12,7 +12,7 @@ import Sponsor from '../screens/Information/SponsorScreen';
 import InformationNavbar from '../screens/Information/InformationNavbar';
 import EventPage from '../screens/EventPage/EventPage';
 import ScrollToTop from '../ScrollToTop';
-import CauseScreen from '../screens/Cause/CauseScreen';
+import CauseScreen from '../screens/CauseScreen/CauseScreen';
 
 const isAuthenticated = () => {
     // Add your authentication logic here
