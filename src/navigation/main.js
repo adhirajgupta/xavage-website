@@ -42,7 +42,7 @@ const Main = () => {
                 <Route path="/" element={<InformationNavbar />}>
                     <Route index element={<Landing />} />
                     <Route path="/cause" element={<CauseScreen />} />
-                        <Route path="/sponsor" element={<Sponsor />} />
+                        <Route path="/sponsors" element={<Sponsor />} />
 
                     <Route path="event/:id" element={<EventPage />} />
                     
