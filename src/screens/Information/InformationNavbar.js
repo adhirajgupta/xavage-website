@@ -9,31 +9,35 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import { Outlet } from 'react-router-dom';
+import { Outlet,useNavigate } from 'react-router-dom';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Cause', 'Events', 'Sponsors'];
 
 function InformationNavbar() {
+    const navigate = useNavigate()
     const [anchorElNav, setAnchorElNav] = React.useState(null);
 
     const handleOpenNavMenu = (event) => {
-        setAnchorElNav(event.currentTarget);
+        setAnchorElNav(event.currentTarget); // Make sure this sets a valid DOM element
     };
 
-    const handleCloseNavMenu = () => {
-        setAnchorElNav(null);
+    const handleCloseNavMenu = (page) => {
+        console.log(page.nativeEvent.target.innerText)
+        navigate(page.nativeEvent.target.innerText.toLowerCase())
+        setAnchorElNav(null); // Closes the menu correctly
     };
+
 
     return (
         <>
-            <AppBar position="static" elevation={0}>
+            <AppBar position="static" elevation={0} style={{ backgroundColor: '#121212' }}>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
                         <Typography
                             variant="h6"
                             noWrap
                             component="a"
-                            href="#app-bar-with-responsive-menu"
+                            href="#"
                             sx={{
                                 mr: 2,
                                 display: { xs: 'none', md: 'flex' },
@@ -72,13 +76,18 @@ function InformationNavbar() {
                                 }}
                                 open={Boolean(anchorElNav)}
                                 onClose={handleCloseNavMenu}
-                                sx={{ display: { xs: 'block', md: 'none' } }}
+                                sx={{
+                                    display: { xs: 'block', md: 'none' },
+                                    '.MuiPaper-root': { backgroundColor: '#121212' } // Target only the dropdown background
+                                }}
                             >
-                                {pages.map((page) => (
-                                    <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                        <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
+
+                                {pages.map((page, index) => (
+                                    <MenuItem key={index} onClick={handleCloseNavMenu}>
+                                        <Typography sx={{ textAlign: 'center', letterSpacing: '.15rem' }}>{page}</Typography>
                                     </MenuItem>
                                 ))}
+
                             </Menu>
                         </Box>
 
@@ -107,20 +116,22 @@ function InformationNavbar() {
                                 <Button
                                     key={page}
                                     onClick={handleCloseNavMenu}
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
+                                    sx={{ my: 2, color: 'white', display: 'block',mr:2 }}
                                 >
                                     {page}
                                 </Button>
                             ))}
                         </Box>
 
-                        {/* Highlighted login button */}
+                        {/* Rounded login button */}
                         <Box sx={{ flexGrow: 0 }}>
                             <Button
                                 variant="contained"
                                 color="secondary"
                                 sx={{
                                     backgroundColor: '#f50057',
+                                    borderRadius: '50px', // Make the button rounded
+                                    padding: '6px 24px', // Increase padding for a rounded effect
                                     '&:hover': {
                                         backgroundColor: '#ff4081',
                                     },
