@@ -10,6 +10,8 @@ import {
 import Landing from '../screens/LandingScreen/LandingScreen';
 import Sponsor from '../screens/Information/SponsorScreen';
 import InformationNavbar from '../screens/Information/InformationNavbar';
+import EventPage from '../screens/EventPage/EventPage';
+import ScrollToTop from '../ScrollToTop';
 //import CauseScreen from '../screens/Cause/CauseScreen';
 
 const isAuthenticated = () => {
@@ -35,10 +37,12 @@ const NotFound = () => {
 const Main = () => {
     return (
         <Router>
+            <ScrollToTop />
             <Routes>
-                <Route path="/" element={<InformationNavbar/>}>
-                    <Route path="/" element={<Landing />} />
+                <Route path="/" element={<InformationNavbar />}>
+                    <Route index element={<Landing />} />
                     <Route path="/ourcause" element={<Sponsor />} />
+                    <Route path="event/:id" element={<EventPage />} />
                 </Route>
                 <Route path="*" element={<NotFound />} />
             </Routes>
