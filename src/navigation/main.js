@@ -38,7 +38,7 @@ const Main = () => {
             <Routes>
                 <Route path="/" element={<InformationNavbar/>}>
                     <Route path="/" element={<Landing />} />
-                    <Route path="/ourcause" element={<Sponsor />} />
+                    <Route path="/cause" element={<Sponsor />} />
                 </Route>
                 <Route path="*" element={<NotFound />} />
             </Routes>
