@@ -1,29 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import eventData from "../../../eventData";
 
-const LandingS2 = () => {
-  const eventData = [
-    {
-      title: "Deal or No Deal"
-    },
-    {
-      title: "The More the Money"
-    },
-    {
-      title: "Ready? Set? Sell!"
-    },
-    {
-      title: "Trojans Tank"
-    },
-    {
-      title: "The Courting"
-    },
-    {
-      title: "Conquer the Crisis"
-    },
-    {
-        title: "Stakeholders' Showdown"
-      },
-  ];
+export const LandingS2 = () => {
   return (
     <div className="landing-s2-events" id="landing-s2-section">
 
@@ -43,9 +22,10 @@ const LandingS2 = () => {
 
       <div className="section2-bottom" id="landing-s2-bottom">
         {eventData.map((data) => (
-          <div class="infocard-text-container" id="s2-event-card">
-            <a href="#" id="s2-event-card-title">{data.title}</a>
-            {/* <h2 id="s2-event-card-desc">{data.text}</h2>  */}
+          <div key={data.id} className="infocard-text-container" id="s2-event-card">
+            <Link to={`/event/${data.id}`} id="s2-event-card-title">
+              {data.title}
+            </Link>
           </div>
         ))}
       </div>
