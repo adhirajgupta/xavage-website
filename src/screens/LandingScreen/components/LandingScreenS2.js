@@ -22,10 +22,16 @@ export const LandingS2 = () => {
 
       <div className="section2-bottom" id="landing-s2-bottom">
         {eventData.map((data) => (
-          <div key={data.id} className="infocard-text-container" id="s2-event-card">
+          <div key={data.id} className="infocard-text-container" id="s2-event-card" style={{
+                            backgroundImage: `url(${data.image})`,  //bkg images for xavage event cards from xavage23 website
+                            backgroundSize: 'contain',             
+                            backgroundPosition: 'center',          
+                            backgroundRepeat: 'no-repeat'          
+                        }}>
             <Link to={`/event/${data.id}`} id="s2-event-card-title">
               {data.title}
             </Link>
+            <h3 class='event-subheading' id='event-card-tagline-subheading'>{data.tagline}</h3>
           </div>
         ))}
       </div>

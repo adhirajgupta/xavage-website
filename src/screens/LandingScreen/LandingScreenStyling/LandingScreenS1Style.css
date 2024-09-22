@@ -1,13 +1,15 @@
 .App{
-    background-color: #121212;
+    /* background-color: #121212; */
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(21, 21, 21));
     padding-top: 2rem;
 }
 #landing-21-container{
     padding-top: 2rem;
 }
 #landing-s1-inner-container{
-    background-image: url(/src/screens/LandingScreen/hacks_bg.png);
-    height: 500px;
+    /* background-image: url(/src/screens/LandingScreen/hacks_bg.png); */
+    background-image: url(/src/screens/LandingScreen/Bkg-Images/smoke_background.png);
+    height: 600px;
     background-size: cover;
     margin: 1rem 2rem;
     max-width: 100%;

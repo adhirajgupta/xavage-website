@@ -1,13 +1,16 @@
 #landing-s2-section{
-    background-color:#121212;
+    /* background-color:#121212; */
     margin: 0rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.event-subheading{
+    margin-top: 2rem;
+}
 
-#landing-s2-section h1, h2, h2, h4, p{
+#landing-s2-section h1, h2, h2, h3, h4, p{
     color: #fff;
 }
 #landing-s2-top{
@@ -51,7 +54,7 @@
     margin: 0.5rem 2rem;
     padding: 0.5rem;
     border-radius: 25px;
-    background-color: #2c2b2b;
+    background-color: #000000;
     width: 80%;
     height: 160px;
     display: flex;
@@ -69,6 +72,7 @@
     color: #fff;
     font-size: 2rem;
     font-weight: 750;
+    margin-top: 1rem;
 }
 #s2-event-card-desc{
     font-size: 1rem;
@@ -111,14 +115,18 @@
     #s2-event-card{
         margin: 1rem 0.5rem;
         padding: 0.5rem;
-        width: 30%;
-        height: 225px;
+        width: 20%;
+        height: 275px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+    #landing-s2-bottom > :nth-child(n+5):nth-child(-n+7){
+        width: 27.5%;
+    }
     #s2-event-card-title{
         font-size: 2.2rem;
+        text-wrap: wrap;
     }
     #s2-event-card-desc{
         font-size: 1.2rem;
