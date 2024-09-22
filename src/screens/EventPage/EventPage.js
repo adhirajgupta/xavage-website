@@ -13,9 +13,10 @@ const EventPage = () => {
 
   return (
     <div id="event-page-container">
-
+      <div id='event-heading' style={{ backgroundImage: `url(${event.bgimage})` }}>
         <h1 id="event-card-title">{event.title}</h1>
         <h2 id='event-card-tagline'>{event.tagline}</h2>
+      </div>
         <div id="event-card-1" class='eventpage-card'>
                 <h1>Description</h1>
                 <p id="event-card-description">{event.description}</p>
@@ -30,7 +31,7 @@ const EventPage = () => {
                 <h1>Prizes</h1>
                 <p id="event-card-prizes">{event.prizes}</p>
         </div>
-
+      
     </div>
   );
 };

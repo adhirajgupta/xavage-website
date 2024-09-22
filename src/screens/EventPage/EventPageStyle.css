@@ -9,6 +9,21 @@
     align-items: center;
 }
 
+#event-heading{
+    text-align: center;
+    padding: 10px 2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+    background-color: black;
+    width: 85%;
+    transition: transform 0.3s ease;
+}
+
+#event-heading:hover {
+    transform: scale(1.02);
+}
 
 .eventpage-card {
     background-color: #1e1e1e; 
@@ -23,6 +38,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
+
 
 .eventpage-card h1{
     font-size: 2.5rem;
