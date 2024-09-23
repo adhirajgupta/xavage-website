@@ -10,6 +10,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Outlet,useNavigate } from 'react-router-dom';
+import xavage_logo from './xavage-24-logo.png';
 
 const pages = ['Cause', 'Events', 'Sponsors'];
 
@@ -48,7 +49,8 @@ function InformationNavbar() {
                                 textDecoration: 'none',
                             }}
                         >
-                            LOGO
+                        {/* LOGO */}
+                        <img src={xavage_logo} alt="xavage-logo-2024" height={'50px'} width={'auto'}/>
                         </Typography>
 
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -107,7 +109,8 @@ function InformationNavbar() {
                                 textDecoration: 'none',
                             }}
                         >
-                            LOGO
+                        {/* LOGO */}
+                        <img src={xavage_logo} alt="xavage-logo-2024" height={'50px'} width={'auto'}/>
                         </Typography>
 
                         {/* Aligning menu to the right */}

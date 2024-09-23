@@ -8,7 +8,10 @@
 }
 #landing-s1-inner-container{
     /* background-image: url(/src/screens/LandingScreen/hacks_bg.png); */
-    background-image: url(/src/screens/LandingScreen/Bkg-Images/smoke_background.png);
+    /* background-image: url(/src/screens/LandingScreen/Bkg-Images/smoke_background.png); */
+    background-image: url(./../xavage-animated-gif.gif);
+    background-position: center;
+    background-size: contain;
     height: 600px;
     background-size: cover;
     margin: 1rem 2rem;
