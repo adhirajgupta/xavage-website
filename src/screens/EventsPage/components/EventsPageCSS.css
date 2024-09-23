@@ -1,0 +1,11 @@
+#eventslist-primary-heading{
+    color: #fff;
+    font-size:3.5rem;
+    font-weight: 700;
+}
+
+#eventslist-secondary-heading{
+    color: #fff;
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
