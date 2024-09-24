@@ -1,32 +1,56 @@
-#container{
+#organizations{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     width: 90%;
-    background-color: #2c2b2b;
+    /* background-color: #2c2b2b; */
     border-radius: 30px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 40px;
+    color: white;   
+    background-color: black;
 }
-#how{
-    color: white;
-    width: 50%;
-    padding: 50px;
-    text-align: center;
-}
-#how h1{
-    margin: 0;
-    margin-bottom: 50px;
+#organizations h1{
     font-size: 40px;
 }
-#how p{
-    margin: 10px;
-}
-#logo{
-    height: 350px;
-    width: 300px;
-    background-color: #BBEBEF;
-    color: black;
-    margin: 20px;
+#orgs-container{
+    padding: 50px;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+}
+#org-card{
+    width: 25%;
+    height: 400px;
+    background-color: white;
+    padding: 20px;
+    margin: 3px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: white solid;
+    transition: transform 0.3s ease;
+}
+#org-card:hover{
+    transform: scale(1.02);
+}
+#org-card p, #org-card h3{
+    color: black;
+}
+#org-img{
+    height: auto;
+    width: 70%;
+}
+@media (max-width: 700px){
+    #organizations h1{
+        font-size: 35px;
+    }
+    #orgs-container{
+        flex-direction: column;
+    }
 }
