@@ -1,12 +1,27 @@
 .App {
   text-align: center;
 }
-
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(./screens/Fonts/Montserrat-Regular.woff);
+  /* font-weight: bold; */
+}
+@font-face {
+  font-family: Rosella-Solid;
+  src: url(./screens/Fonts/Rosella-Solid.woff);
+  /* font-weight: bold; */
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+h1 {
+  font-family: Rosella-Solid;
+}
+h2, h3, p, a {
+  font-family: Montserrat-Regular;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
