@@ -130,17 +130,15 @@ function InformationNavbar() {
                         <Box sx={{ flexGrow: 0 }}>
                             <Button
                                 variant="contained"
-                                color="secondary"
+                                color="primary"
                                 sx={{
-                                    backgroundColor: '#f50057',
                                     borderRadius: '50px', // Make the button rounded
                                     padding: '6px 24px', // Increase padding for a rounded effect
                                     '&:hover': {
-                                        backgroundColor: '#ff4081',
                                     },
                                 }}
                             >
-                                Login
+                                Register Now 
                             </Button>
                         </Box>
                     </Toolbar>
