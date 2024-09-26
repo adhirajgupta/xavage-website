@@ -13,7 +13,7 @@ const LandingS1 = () => {
           <h1 id="edition-heading">10th Edition</h1>
         </div>
       </div>
-      <button class="primary-button" id="registration-button">
+      <button class="primary-button" id="registration-button" onClick={()=>window.open('https://forms.office.com/r/wvubmman1A','_blank')}>
         Register Now!
       </button>
     </div>

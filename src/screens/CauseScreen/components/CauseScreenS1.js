@@ -6,7 +6,9 @@ const CauseS1 = () => {
     <div id="container">
         <div id="why">
             <h1>WHY WE HOST XAVAGE?</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus fringilla velit at luctus. Pellentesque mauris sem, pharetra nec venenatis semper, mattis id mauris. Mauris sed sodales dolor, sed tristique nunc. Vivamus in quam molestie, porta neque sit amet, tempus lacus. Maecenas ut pretium mi, nec commodo magna. Sed ultricies, turpis at aliquam cursus, ipsum libero pretium magna, non tristique eros nulla at orci. Quisque scelerisque quam ut felis blandit pulvinar a at ligula.</p>
+            <p>
+              Since 2019, 65-70% of Indian healthcare expenditure has been out-of-pocket instalments. XAVAGE ’24 aims to address the challenge of affordability and accessibility by bridging the gap between medical aid and the underprivileged.
+              </p>
         </div>
         <img src={require('./xavage-24-logo.png')} id="logo" alt="LOGO"/>
     </div>

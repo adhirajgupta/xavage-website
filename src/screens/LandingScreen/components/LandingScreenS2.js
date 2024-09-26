@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import eventData from "../../../eventData";
 
 export const LandingS2 = () => {
+  const navigate = useNavigate()
   return (
     <div className="landing-s2-events" id="landing-s2-section">
 
@@ -14,7 +15,7 @@ export const LandingS2 = () => {
         <p className="primary-text" id="landing-s2-text">
           For seeing more details, visit the events page or click on an event
         </p>
-        <button className="secondary-button" id="landing-s2-button">
+        <button className="secondary-button" id="landing-s2-button" onClick={()=>navigate('/events')}>
           Visit Events Page
           {/* <FiArrowRight />{" "} */}
         </button>
