@@ -1,10 +1,10 @@
-import dealNoDealImage from './screens/EventPage/DealNoDeal.png';
-import moreTheMoneyImage from './screens/EventPage/CapitalConquest.png';
+import dealNoDealImage from './screens/EventPage/Deal.png';
+import moreTheMoneyImage from './screens/EventPage/MoreMoney.png';
 import readySetSellImage from './screens/EventPage/Ready.png';
 import trojansTankImage from './screens/EventPage/Trojan.png';
 import theCourtingImage from './screens/EventPage/Courting.png';
-import conquerTheCrisisImage from './screens/EventPage/Clash.png';
-import stakeholdersShowdownImage from './screens/EventPage/Deal.png';
+import conquerTheCrisisImage from './screens/EventPage/Conquer.png';
+import stakeholdersShowdownImage from './screens/EventPage/Stakeholder.png';
 
 const eventData = [
   {
