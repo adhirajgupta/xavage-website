@@ -13,7 +13,7 @@ export const LandingS2 = () => {
           Our Events
         </h1>
         <p className="primary-text" id="landing-s2-text">
-          For seeing more details, visit the events page or click on an event
+          For more details, visit the events page or click on an event
         </p>
         <button className="secondary-button" id="landing-s2-button" onClick={()=>navigate('/events')}>
           Visit Events Page

@@ -9,10 +9,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import { Outlet,useNavigate } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 import xavage_logo from './xavage-24-logo.png';
 
-const pages = ['Cause', 'Events', 'Sponsors'];
+const pages = ['Cause', 'Events', 'Sponsors', 'Event Brochure'];
 
 function InformationNavbar() {
     const navigate = useNavigate()
@@ -24,7 +24,16 @@ function InformationNavbar() {
 
     const handleCloseNavMenu = (page) => {
         console.log(page.nativeEvent.target.innerText)
-        navigate(page.nativeEvent.target.innerText.toLowerCase())
+        if (page.nativeEvent.target.innerText.toLowerCase() === "event brochure") {
+            const pdfUrl = require("../../XAVAGE  2024 Events Brochure.pdf");
+            const link = document.createElement("a");
+            link.href = pdfUrl;
+            link.download = "XAVAGE  2024 Events Brochure.pdf"; // specify the filename
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        } else {
+            navigate(page.nativeEvent.target.innerText.toLowerCase()) }
         setAnchorElNav(null); // Closes the menu correctly
     };
 
@@ -49,8 +58,8 @@ function InformationNavbar() {
                                 textDecoration: 'none',
                             }}
                         >
-                        {/* LOGO */}
-                        <img src={xavage_logo} alt="xavage-logo-2024" height={'50px'} width={'auto'}/>
+                            {/* LOGO */}
+                            <img src={xavage_logo} alt="xavage-logo-2024" height={'50px'} width={'auto'} />
                         </Typography>
 
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -109,8 +118,8 @@ function InformationNavbar() {
                                 textDecoration: 'none',
                             }}
                         >
-                        {/* LOGO */}
-                        <img src={xavage_logo} alt="xavage-logo-2024" height={'50px'} width={'auto'}/>
+                            {/* LOGO */}
+                            <img src={xavage_logo} alt="xavage-logo-2024" height={'50px'} width={'auto'} />
                         </Typography>
 
                         {/* Aligning menu to the right */}
@@ -119,7 +128,7 @@ function InformationNavbar() {
                                 <Button
                                     key={page}
                                     onClick={handleCloseNavMenu}
-                                    sx={{ my: 2, color: 'white', display: 'block',mr:2 }}
+                                    sx={{ my: 2, color: '#83F4FF', display: 'block', mr: 2 }}
                                 >
                                     {page}
                                 </Button>
@@ -129,18 +138,18 @@ function InformationNavbar() {
                         {/* Rounded login button */}
                         <Box sx={{ flexGrow: 0 }}>
                             <Button
-                            onClick={()=>window.open('https://forms.office.com/r/wvubmman1A','_blank')}
+                                onClick={() => window.open('https://forms.office.com/r/wvubmman1A', '_blank')}
                                 variant="contained"
                                 color="primary"
                                 sx={{
                                     borderRadius: '30px', // Make the button rounded
                                     paddingLeft: '6px 6px', // Increase padding for a rounded effect
-                                    
+
                                     '&:hover': {
                                     },
                                 }}
                             >
-                              <Typography variant='p' component={"p"}>  Register Now </Typography>
+                                <Typography variant='p' component={"p"} color='black'>  Register Now </Typography>
                             </Button>
                         </Box>
                     </Toolbar>

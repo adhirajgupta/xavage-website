@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import React from "react";
 
 const LandingS1 = () => {
@@ -11,8 +12,14 @@ const LandingS1 = () => {
         <div class="registration-container" id="landing-s1-registration-div">
           <h1 id="xavage-heading">XAVAGE 2024</h1>
           <h1 id="edition-heading">10th Edition</h1>
+                    
+
         </div>
       </div>
+                  <div style={{marginTop:-80}}></div>
+
+                    <Typography sx={{fontFamily:'Rosella-Solid',marginBottom:2}}>24th October</Typography>
+                    <Typography sx={{fontFamily:'Rosella-Solid'}}>THE INTERNATIONAL SCHOOL BANGALORE</Typography>
       <button class="primary-button" id="registration-button" onClick={()=>window.open('https://forms.office.com/r/wvubmman1A','_blank')}>
         Register Now!
       </button>
