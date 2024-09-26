@@ -129,16 +129,18 @@ function InformationNavbar() {
                         {/* Rounded login button */}
                         <Box sx={{ flexGrow: 0 }}>
                             <Button
+                            onClick={()=>window.open('https://forms.office.com/r/wvubmman1A','_blank')}
                                 variant="contained"
                                 color="primary"
                                 sx={{
-                                    borderRadius: '50px', // Make the button rounded
-                                    padding: '6px 24px', // Increase padding for a rounded effect
+                                    borderRadius: '30px', // Make the button rounded
+                                    paddingLeft: '6px 6px', // Increase padding for a rounded effect
+                                    
                                     '&:hover': {
                                     },
                                 }}
                             >
-                                Register Now 
+                              <Typography variant='p' component={"p"}>  Register Now </Typography>
                             </Button>
                         </Box>
                     </Toolbar>
