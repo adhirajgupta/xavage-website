@@ -47,11 +47,14 @@ const styles = {
 	eventTitle: {
 		fontSize: isSmallScreen ? '1.5rem' : '2rem',
 		marginBottom: '0.5rem',
+		fontFamily: 'Rosella-Solid'
 	},
 	eventTagline: {
 		fontSize: isSmallScreen ? '1rem' : '1.2rem',
 		marginBottom: '0.5rem',
 		color: '#ccc',
+		fontFamily: 'Rosella-Solid'
+
 	},
 	eventDescription: {
 		fontSize: '1rem',
@@ -59,6 +62,26 @@ const styles = {
 		marginTop: '1rem',
 		width: isSmallScreen ? '80%' : '50%',
 		textAlign: 'center',
+		fontFamily: 'Montserrat-Regular'
+	},
+
+	floatingButton: {
+		position: 'fixed',
+		bottom: '2rem',
+		right: '2rem',
+		backgroundColor: '#83F4FF', // Pink color for the button
+		color: '#fff',
+		border: 'none',
+		borderRadius: '50%',
+		width: '60px',
+		height: '60px',
+		fontSize: '1.5rem',
+		display: 'flex',
+		justifyContent: 'center',
+		alignItems: 'center',
+		cursor: 'pointer',
+		boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
+		zIndex: 1000, // Ensure the button stays on top
 	},
 };
 
@@ -82,6 +105,10 @@ const EventPage = () => {
 	const [scrolling, setScrolling] = useState(false); // State to handle scroll debounce
 	const scrollTimeout = useRef(null); // Ref to track timeout between scrolls
 
+	// Function to handle the button click to go to the next event
+	const handleNextEvent = () => {
+		setCurrentEventIndex((prevIndex) => (prevIndex === eventData.length - 1 ? 0 : prevIndex + 1));
+	};
 
 	var xDown = null;
 	var yDown = null;
@@ -120,7 +147,8 @@ const EventPage = () => {
 			setCurrentEventIndex((prevIndex) =>
 				prevIndex === eventData.length - 1 ? 0 : prevIndex + 1
 			);
-		} else {
+
+		} else if (e.deltaY < 0) {
 			// Scroll up - show the previous event
 			setCurrentEventIndex((prevIndex) =>
 				prevIndex === 0 ? eventData.length - 1 : prevIndex - 1
@@ -182,7 +210,7 @@ const EventPage = () => {
 				</motion.div>
 				{/* Render the description below the image or above on small screens */}
 				<motion.div
-				          key={`event-description-${currentEventIndex}`} // Use key to force re-mount on event change
+					key={`event-description-${currentEventIndex}`} // Use key to force re-mount on event change
 
 					style={styles.eventDescription}
 					variants={descriptionAnimation}
@@ -191,6 +219,11 @@ const EventPage = () => {
 				>
 					{currentEvent.description}
 				</motion.div>
+				{/* Floating button to go to the next event */}
+				<button style={styles.floatingButton} onClick={handleNextEvent}>
+					&gt;
+				</button>
+
 			</div>
 		</div>
 	);

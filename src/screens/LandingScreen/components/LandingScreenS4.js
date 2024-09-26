@@ -9,7 +9,7 @@ class Landing4 extends Component {
             <footer class='footer' id='landing-s4-footer'>
                 <div class="footer-container">
                     <div class="footer-logos" id='footer-logo-div'>
-                        <a href="https://instagram.com" class="social-icon" target="_blank">
+                        <a href="https://www.instagram.com/xavage_24?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon" target="_blank">
                             <FontAwesomeIcon icon={faInstagram} size="2x" color="#ffffff" />
                         </a>
                         {/* <a href="https://facebook.com" class="social-icon" target="_blank">

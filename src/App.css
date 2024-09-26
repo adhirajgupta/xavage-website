@@ -19,7 +19,7 @@
 h1 {
   font-family: Rosella-Solid;
 }
-h2, h3, p, a {
+h2, h3, p, a, h4, h5, h6 {
   font-family: Montserrat-Regular;
 }
 @media (prefers-reduced-motion: no-preference) {
