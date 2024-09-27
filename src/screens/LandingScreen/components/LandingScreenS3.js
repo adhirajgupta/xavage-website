@@ -1,19 +1,18 @@
 import React, { useState } from "react";
 import Logo1 from "./../sponsor-images/Placeholder-Logo1.png";
+import NambiarBuilders from './../sponsor-images/NambiarBuilders_Logo.png';
+import Sam from './../sponsor-images/SAAMTaT.png';
 
 const sponsors = [
   {
-    name: "Sponsor 1",
+    name: "Nambiar Builders",
     description: "Description for Sponsor 1 goes here.",
-    image: Logo1,
+    image: NambiarBuilders,
   },
   {
-    name: "Sponsor 2",
+    name: "SAAM Tours & Travels",
     description: "Description for Sponsor 2 goes here.",
-  },
-  {
-    name: "Sponsor 3",
-    description: "Description for Sponsor 3 goes here.",
+    image: Sam,
   },
   // Add more sponsors as needed
 ];
@@ -41,7 +40,7 @@ const LandingS3 = () => {
         &#10094;
         </button>
         <div className="sponsor-content">
-        <img className="sponsor-logo" src={sponsors[currentSponsor].image} alt="Sponsor Logo"/>
+        <img className="sponsor-logo" src={sponsors[currentSponsor].image} alt="Sponsor Logo" id="sponsor_image"/>
           <h2>{sponsors[currentSponsor].name}</h2>
           <p>{sponsors[currentSponsor].description}</p>
         </div>
