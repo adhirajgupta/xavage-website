@@ -79,6 +79,13 @@
     font-weight: 500;
 }
 
+#landing-s2-visitingpage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media (min-width: 650px){
 
     #landing-s2-top{

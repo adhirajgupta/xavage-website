@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faXTwitter, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram,faXTwitter, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 class Landing4 extends Component {
     state = {}
@@ -22,6 +22,14 @@ class Landing4 extends Component {
                             <FontAwesomeIcon icon={faLinkedin} size="2x" color="#ffffff" />
                         </a> */}
                     </div>
+
+                    <div class='container' id='footer-address-container'>
+                        <a id='TISB-Link' href='https://maps.app.goo.gl/kviCSFVvaf2HEaKN6' target='blank'>The International School Bangalore</a>
+                        <p>NAFL Valley Whitefield - Sarjapur Road,</p>
+                        <p>Circle, near Dommasandra, Bengaluru,</p>
+                        <p>Karnataka 562125</p>
+                    </div>
+
 
                     <div class="footer-info" id="footer-info-div">
                         <p>Have any questions? Write to us at:</p>

@@ -12,7 +12,7 @@ const eventData = [
     title: "Deal or No Deal",
     tagline: "Outbid, Outplay and Outshine",
     description: "Teamwork makes the dream work! Get ready for TISB's Champions League auction, where you’ll draft top players within your budget. With high stakes, strategy is key. Build the ultimate team, outsmart rivals, and aim for victory. Play smart, lead your squad, and rise to the top. The championship is yours for the taking!",
-    rules: "Rules for Event 1",
+    rules: "Teams will compete in groups or as individuals depending on the round, with set scenarios and tasks to complete",
     prizes: "Prizes for event 1",
     bgimage: dealNoDealImage,
   },
@@ -28,7 +28,7 @@ const eventData = [
   {
     id: 3,
     title: "Ready? Set? Sell!",
-    tagline: "Sink or Swim",
+    tagline: "From Mind to Media, Lead the Idea!",
     description: "Get ready to ignite your creativity and showcase your marketing prowess at Ready? Set. Sell!! This is the ultimate arena where strategy meets innovation. Compete in thrilling rounds that challenge your advertising skills, push your boundaries, and let your ideas shine. Gather your team, embrace the excitement, and prove you have what it takes to lead the idea. The spotlight is yours—are you ready to sell?",
     rules: "rules######",
     prizes: "prizes######",
