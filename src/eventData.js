@@ -12,7 +12,7 @@ const eventData = [
     title: "Deal or No Deal",
     tagline: "Outbid, Outplay and Outshine",
     description: "Teamwork makes the dream work! Get ready for TISB's Champions League auction, where you’ll draft top players within your budget. With high stakes, strategy is key. Build the ultimate team, outsmart rivals, and aim for victory. Play smart, lead your squad, and rise to the top. The championship is yours for the taking!",
-    rules: "Rules for Event 1",
+    rules: "Teams will compete in groups or as individuals depending on the round, with set scenarios and tasks to complete",
     prizes: "Prizes for event 1",
     bgimage: dealNoDealImage,
   },
