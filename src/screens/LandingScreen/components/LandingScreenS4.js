@@ -12,15 +12,15 @@ class Landing4 extends Component {
                         <a href="https://www.instagram.com/xavage_24?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon" target="_blank">
                             <FontAwesomeIcon icon={faInstagram} size="2x" color="#ffffff" />
                         </a>
-                        {/* <a href="https://facebook.com" class="social-icon" target="_blank">
+                         {/* <a href="https://facebook.com" class="social-icon" target="_blank">
                             <FontAwesomeIcon icon={faFacebook} size="2x" color="#ffffff" />
                         </a>
                         <a href="https://twitter.com" class="social-icon" target="_blank">
                             <FontAwesomeIcon icon={faXTwitter} size="2x" color="#ffffff" />
-                        </a> */}
+                        </a>
                         <a href="https://linkedin.com" class="social-icon" target="_blank">
                             <FontAwesomeIcon icon={faLinkedin} size="2x" color="#ffffff" />
-                        </a>
+                        </a> */}
                     </div>
 
                     <div class="footer-info" id="footer-info-div">

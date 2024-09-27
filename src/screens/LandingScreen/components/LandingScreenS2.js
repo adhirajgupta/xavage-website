@@ -27,7 +27,7 @@ export const LandingS2 = () => {
                             backgroundImage: `url(${data.bgimage})`,  //bkg images for xavage event cards from xavage23 website
                             backgroundSize: 'contain',             
                             backgroundPosition: 'center',          
-                            backgroundRepeat: 'no-repeat'          
+                            backgroundRepeat: 'no-repeat',    
                         }}>
             <Link to={`/event/${data.id}`} id="s2-event-card-title">
               {data.title}

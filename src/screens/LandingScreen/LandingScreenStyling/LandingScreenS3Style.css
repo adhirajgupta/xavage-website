@@ -70,6 +70,11 @@
   #section3-heading{
     font-size: 3rem;
   }
+
+  #sponsor_image{
+    height: 8rem;
+    width: auto;
+  }
   /* Larger Screens - Tablet and Desktop */
   @media (min-width: 768px) {
     .sponsor-card {
