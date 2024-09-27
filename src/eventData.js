@@ -28,7 +28,7 @@ const eventData = [
   {
     id: 3,
     title: "Ready? Set? Sell!",
-    tagline: "Sink or Swim",
+    tagline: "From Mind to Media, Lead the Idea!",
     description: "Get ready to ignite your creativity and showcase your marketing prowess at Ready? Set. Sell!! This is the ultimate arena where strategy meets innovation. Compete in thrilling rounds that challenge your advertising skills, push your boundaries, and let your ideas shine. Gather your team, embrace the excitement, and prove you have what it takes to lead the idea. The spotlight is yours—are you ready to sell?",
     rules: "rules######",
     prizes: "prizes######",
