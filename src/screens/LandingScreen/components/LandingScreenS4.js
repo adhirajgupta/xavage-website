@@ -26,7 +26,7 @@ class Landing4 extends Component {
                     <div class='container' id='footer-address-container'>
                         <a id='TISB-Link' href='https://maps.app.goo.gl/kviCSFVvaf2HEaKN6' target='blank'>The International School Bangalore</a>
                         <p>NAFL Valley Whitefield - Sarjapur Road,</p>
-                        <p>Circle, near Dommasandra, Bengaluru,</p>
+                        <p>near Dommasandra Circle, Bengaluru,</p>
                         <p>Karnataka 562125</p>
                     </div>
 
