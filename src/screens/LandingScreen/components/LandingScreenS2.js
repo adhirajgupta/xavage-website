@@ -26,12 +26,14 @@ export const LandingS2 = () => {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <Link to={`/event/${data.id}`} id="s2-event-card-title">
+            <Link to={`/event/${data.id}`} class="event-heading" id="s2-event-card-title">
               {data.title}
             </Link>
+            <Link to={`/event/${data.id}`} style={{ textDecoration: "none" }}>
             <h3 class="event-subheading" id="event-card-tagline-subheading">
               {data.tagline}
             </h3>
+            </Link>
           </div>
         ))}
         <div className="container" id="landing-s2-visitingpage">
