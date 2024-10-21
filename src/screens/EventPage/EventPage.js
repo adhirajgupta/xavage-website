@@ -23,13 +23,23 @@ const EventPage = () => {
         </div>
 
         <div id='event-card-2' class='eventpage-card'>
+                <h1>Maximum number of teams</h1>
+                <p id="event-card-rules">{event.maximum_teams}</p>
+        </div>
+
+        <div id='event-card-3' class='eventpage-card'>
+                <h1>Participants per teams</h1>
+                <p id="event-card-rules">{event.participants_per_team}</p>
+        </div>
+
+        <div id='event-card-4' class='eventpage-card'>
                 <h1>Rules</h1>
                 <p id="event-card-rules">{event.rules}</p>
         </div>
 
-        <div id="event-card-3" class='eventpage-card'>
-                <h1>Prizes</h1>
-                <p id="event-card-prizes">{event.prizes}</p>
+        <div id="event-card-5" class='eventpage-card'>
+                <h1>Judging Criteria</h1>
+                <p id="event-card-prizes">{event.judging_criteria}</p>
         </div>
       
     </div>
